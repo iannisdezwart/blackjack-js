@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>BlackJack JS</title>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/card.js" charset="utf-8"></script>
+		<script defer src="js/index.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="game">
+			<p class="game-title game-title-dealer">Dealer: <span class="total dealer-total"></span></p>
+			<div class="player dealer"></div>
+
+			<p class="game-title game-title-us">Us: <span class="total us-total"></span></p>
+			<div class="player us"></div>
+		</div>
+
+		<p class="money-container">Money: <span class="money"></span></p>
+
+		<div class="buttons">
+			<button class="hit" onclick="hit()">Hit</button>
+			<button onclick="stand()">Stand</button>
+			<button class="restart" onclick="restart()">Restart</button>
+		</div>
+
+		<div class="console">
+			<p>Opened BlackJack JS</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+* {
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+	color: #fff;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #111;
+}
+
+.game {
+	display: flex;
+	
+	font-size: 32px;
+	flex-direction: column;
+}
+
+.game > .player {
+	display: flex;
+	justify-content: center;
+}
+
+.game-title {
+	text-align: center;
+}
+
+.card {
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	line-height: 100px;
+	text-align: center;
+	margin: .5em;
+	background-color: #222;
+	border-radius: 5px;
+}
+
+span.cardsuit {
+	margin-right: 5px;
+}
+
+.red {
+	color: #f00;
+}
+
+button {
+	border: 0;
+	background-color: #222;
+	padding: 1em;
+	margin: .5em;
+	font-size: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 200ms ease;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:not(.disabled, .green):hover {
+	background-color: #333;
+}
+
+button.disabled {
+	background-color: #f00;
+}
+
+button.green {
+	background-color: #0f0;
+}
+
+.money-container {
+	font-size: 24px;
+}
+
+.console {
+	margin-top: 1em;
+	padding: 0 1em;
+	overflow-y: auto;
+	background-color: #222;
+	height: 200px;
+	width: 500px;
+	border-radius: 5px;
+}
+
+.console > p {
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 18px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+	border-radius: 5px;
+	transition: background-color 200ms ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #444;
+}
